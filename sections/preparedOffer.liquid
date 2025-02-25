@@ -1,4 +1,11 @@
+{% liquid
+  assign offer = section.settings.offer
+%}
+
+
+
 {% schema %}
+  
   {
     "name": "Section name",
      "presets": [
@@ -56,6 +63,11 @@
         "default":"",
         "id": "section_width",
         "label": "Section Width"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
       }
     ]
    
