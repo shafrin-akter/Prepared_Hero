@@ -45,7 +45,7 @@
         "url": "",
         "newtab": false,
         "padding": "10px 10px",
-        "section_width": "",
+        "section_width": "900px",
         "bg_color": ""
       }
     }
