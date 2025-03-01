@@ -43,7 +43,7 @@
       "settings": {
         "offer": "shopify://shop_images/poster.webp",
         "url": "",
-        "newtab": false,
+        "newtab": true,
         "padding": "10px 10px",
         "section_width": "1400px",
         "bg_color": ""
