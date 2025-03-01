@@ -8,9 +8,16 @@
 %}
 
 <div class="section.id">
-  <a href="{{ url }}"  target="{{ newtab }}">
-    <img src="{{ offer | img_url:"1200x" }}" />
-  </a>
+ 
+ {% if url != blank %} <a href="{{ url }}"  target="{% if newtab == true %}_blank {% endif %}"> e{% endif %}
+   
+    {% if offer != blank %}
+      
+       <img src="{{ offer | img_url:"1200x" }}" />
+      
+    {% endif %}
+   
+  {% if url != blank %}</a>{% endif %}
 </div>
 
 {% schema %}
