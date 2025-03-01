@@ -42,7 +42,7 @@
       "type": "preparedOffer",
       "settings": {
         "offer": "shopify://shop_images/poster.webp",
-        "url": "",
+        "url": "shopify://collections/frontpage",
         "newtab": true,
         "padding": "10px 10px",
         "section_width": "1400px",
