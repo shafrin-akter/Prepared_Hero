@@ -9,7 +9,7 @@
 
 <div class="{{ section.id }} offer_section">
  
- {% if url != blank %} <a href="{{ url }}"  target="{% if newtab == true %}_blank {% endif %}"> e{% endif %}
+ {% if url != blank %} <a href="{{ url }}" {% if newtab == true %}target="_blank"{% endif %} > e{% endif %}
    
     {% if offer != blank %}
       
