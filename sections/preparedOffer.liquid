@@ -7,7 +7,7 @@
   assign bg_color = section.settings.bg_color
 %}
 
-<div class="section.id">
+<div class="{{ section.id }}">
  
  {% if url != blank %} <a href="{{ url }}"  target="{% if newtab == true %}_blank {% endif %}"> e{% endif %}
    
@@ -19,6 +19,13 @@
    
   {% if url != blank %}</a>{% endif %}
 </div>
+
+<style>
+  .{{section.id}}{
+    padding: {{padding}};
+    width:{{section_width}};
+  }
+</style>
 
 {% schema %}
   
