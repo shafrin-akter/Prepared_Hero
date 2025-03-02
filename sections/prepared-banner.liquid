@@ -1,12 +1,12 @@
 {% liquid
-  assign variable_name = value
+  assign rating = section.settings.rating
 %}
 
 
 <div class="banner_section">
   <div class="banner_content">
     <div>
-      
+      <img src="{{  }}" >
     </div>
   </div>
   <div class="banner_img">
@@ -17,7 +17,13 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "rating",
+        "label": "Rating"
+      }
+    ],
     "presets": [
       {
         "name": "Banner"
