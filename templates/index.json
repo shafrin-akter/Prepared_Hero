@@ -41,7 +41,7 @@
     "prepared_offer_XM8XaN": {
       "type": "preparedOffer",
       "settings": {
-        "offer": "shopify://shop_images/poster.webp",
+        "offer": "shopify://shop_images/St_Patrick_Day_home_lg.webp",
         "url": "shopify://collections/frontpage",
         "newtab": true,
         "padding": "10px 10px",
