@@ -6,7 +6,9 @@
 .rating_container{
   display:flex;
   justify-content:center;
+  align-items:center;
 }
 .rating_container img{
-  width:100px;
+  width: 98px;
+    height: 20px;
 }
