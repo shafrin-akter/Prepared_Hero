@@ -1,5 +1,6 @@
 {% liquid
   assign rating = section.settings.rating
+  assign ratingCount = section.settings.ratingCount
 %}
 
 
@@ -7,6 +8,7 @@
   <div class="banner_content">
     <div>
       <img src="{{ rating | img_url:"1200x" }}" >
+      <h3>{{ ratingCount }}</h3>
     </div>
   </div>
   <div class="banner_img">
@@ -22,6 +24,11 @@
         "type": "image_picker",
         "id": "rating",
         "label": "Rating"
+      },
+      {
+        "type": "richtext",
+        "id": "ratingCount",
+        "label": "Sub Title"
       }
     ],
     "presets": [
