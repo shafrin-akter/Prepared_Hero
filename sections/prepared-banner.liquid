@@ -1,6 +1,7 @@
 {% liquid
   assign rating = section.settings.rating
   assign ratingCount = section.settings.ratingCount
+  assign textstyle = section.settings.textstyle
 %}
 
 
@@ -12,13 +13,19 @@
         <img src="{{ rating | img_url:"1200x" }}" >
        
      {% endif %}
-      <h3>{{ ratingCount }}</h3>
+      <h3 class="subtitle">{{ ratingCount }}</h3>
     </div>
   </div>
   <div class="banner_img">
     
   </div>
 </div>
+
+<style>
+  .subtitle{
+    fontfamily:{{textstyle}}
+  }
+</style>
 
 {% schema %}
   {
