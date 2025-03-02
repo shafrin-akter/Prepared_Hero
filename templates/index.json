@@ -48,10 +48,17 @@
         "section_width": "1400px",
         "bg_color": ""
       }
+    },
+    "prepared_banner_GG9Bxq": {
+      "type": "prepared-banner",
+      "settings": {
+        "rating": "shopify://shop_images/St_Patrick_Day_home_lg.webp"
+      }
     }
   },
   "order": [
     "featured_collection",
-    "prepared_offer_XM8XaN"
+    "prepared_offer_XM8XaN",
+    "prepared_banner_GG9Bxq"
   ]
 }
