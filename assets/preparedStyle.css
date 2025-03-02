@@ -7,9 +7,9 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:20px;
+  gap:5px;
 }
 .rating_container img{
   width: 98px;
-    height: 5px;
+    height: 18px;
 }
