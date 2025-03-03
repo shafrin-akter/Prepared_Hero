@@ -60,10 +60,19 @@
             "textColor": "#ff0000",
             "titleWidth": 50
           }
+        },
+        "description_CUH3nq": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Feel prepared & stay calmwith our full suite of emergency preparedness solutions.</p><p></p>",
+            "textColor": "#000000",
+            "descriptionWidth": 36
+          }
         }
       },
       "block_order": [
-        "title_Y9M998"
+        "title_Y9M998",
+        "description_CUH3nq"
       ],
       "settings": {
         "padding": "10px 10px",
