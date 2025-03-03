@@ -3,6 +3,7 @@
   assign textColor = block.settings.textColor
   assign descriptionWidth = block.settings.descriptionWidth
   assign fontSize = block.settings.fontSize
+  assign fontStyle = block.settings.fontFamily
 %}
 
 <p class="description">{{ description }}</p>
@@ -16,6 +17,7 @@
   #shopify-block-{{ block.id }} p{
     color:{{textColor}};
     font-size: {{fontSize}}px;
+    font-family:{{fontStyle}}
   }
 </style>
 {% schema %}
