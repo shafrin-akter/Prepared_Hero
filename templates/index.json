@@ -55,9 +55,9 @@
         "title_Y9M998": {
           "type": "title",
           "settings": {
-            "redTitle": "<p>dfadf</p>",
-            "title": "<p>fadf</p>",
-            "textColor": "#e50f0f"
+            "redTitle": "dfadf",
+            "title": "fadf",
+            "textColor": "#ed3535"
           }
         }
       },
