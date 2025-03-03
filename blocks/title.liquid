@@ -1,8 +1,35 @@
+{% liquid
+  assign redTitle = block.settings.redTitle
+  assign title = block.settings.title
+%}
+<h2 class="red">{{ redTitle }}</h2>
+<h2>{{ title }}</h2>
+
+<style>
+  .red{
+    
+  }
+</style>
 {% schema %}
   {
     "name": "Block name",
     "settings": [
-      
+      {
+        "type": "richtext",
+        "label": "Title",
+        "id": "redTitle"
+      },
+      {
+        "type": "richtext",
+        "label": "Title",
+        "id": "title"
+      },
+      {
+        "type": "color",
+        "label": "Color",
+        "id": "textColor",
+        
+      }
     ],
     "presets": [
       {
