@@ -2,6 +2,7 @@
   assign redTitle = block.settings.redTitle
   assign title = block.settings.title
   assign textColor = block.settings.textColor
+  assign titleWidth = block.settings.titleWidth
 %}
 
 <h2 class="title"> <span class="red">{{ redTitle }}</span> {{ title }}</h2>
@@ -9,6 +10,10 @@
 <style>
  #shopify-block-{{ block.id }} .red{
     color:{{textColor}};
+  }
+  #shopify-block-{{ block.id }}{
+    max-width:100%;
+    width:{{titleWidth}}
   }
 </style>
 {% schema %}
