@@ -5,12 +5,12 @@
   justify-content:center;
   align-items:center;
 }
-.rating_container{
+/* .rating_container{
   display:flex;
   justify-content:center;
   align-items:center;
   gap:5px;
-}
+} */
 .rating_container img{
   width: 98px;
   height: 18px;
