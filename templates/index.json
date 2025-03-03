@@ -51,12 +51,23 @@
     },
     "prepared_banner_GG9Bxq": {
       "type": "prepared-banner",
+      "blocks": {
+        "title_Y9M998": {
+          "type": "title",
+          "settings": {
+            "redTitle": "<p>dfadf</p>",
+            "title": "<p>fadf</p>",
+            "textColor": "#e50f0f"
+          }
+        }
+      },
+      "block_order": [
+        "title_Y9M998"
+      ],
       "settings": {
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
-        "textstyle": "poppins_n4",
-        "ratingFlex": true,
-        "ratingAlingItems": "center"
+        "textstyle": "poppins_n4"
       }
     }
   },
