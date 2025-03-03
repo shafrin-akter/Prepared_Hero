@@ -3,12 +3,14 @@
   assign textColor = block.settings.textColor
   assign descriptionWidth = block.settings.descriptionWidth
   assign fontSize = block.settings.fontSize
-  assign fontStyle = block.settings.fontFamily | font_face
+  assign fontStyle = block.settings.fontFamily | font_family 
 %}
 
 <p class="description">{{ description }}</p>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
   #shopify-block-{{ block.id }} {
     max-width: 100%;
     width: {{ descriptionWidth }}%;
@@ -16,7 +18,7 @@
   #shopify-block-{{ block.id }} p {
     color: {{ textColor }};
     font-size: {{ fontSize }}px;
-    font-family: {{ fontStyle }};
+    font-family: {{ fontStyle }}, sans-serif;
   }
 </style>
 
@@ -36,7 +38,7 @@
       "id": "fontSize",
       "unit": "px",
       "step": 1,
-      "min": 0,
+      "min": 10,
       "max": 100,
       "default": 16
     },
@@ -49,14 +51,15 @@
     {
       "type": "color",
       "label": "Color",
-      "id": "textColor"
+      "id": "textColor",
+      "default": "#000000"
     },
     {
       "type": "range",
       "id": "descriptionWidth",
       "label": "Width",
       "unit": "%",
-      "min": 0,
+      "min": 50,
       "max": 100,
       "step": 1,
       "default": 100
