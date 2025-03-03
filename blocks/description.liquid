@@ -4,12 +4,16 @@
   assign descriptionWidth = block.settings.descriptionWidth
 %}
 
+<p class="description">{{ description }}</p>
 
 <style>
 
   #shopify-block-{{ block.id }}{
     max-width:100%;
-    width:{{titleWidth}}%;
+    width:{{descriptionWidth}}%;
+  }
+  .descriptionWidth{
+    color:{{textColor}}
   }
 </style>
 {% schema %}
