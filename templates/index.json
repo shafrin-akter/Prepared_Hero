@@ -45,7 +45,7 @@
         "url": "shopify://collections/frontpage",
         "newtab": true,
         "padding": "10px 10px",
-        "section_width": "1400px",
+        "section_width": "1200px",
         "bg_color": ""
       }
     },
@@ -67,7 +67,7 @@
       ],
       "settings": {
         "padding": "10px 10px",
-        "section_width": "1400px",
+        "section_width": "1200px",
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
         "textstyle": "poppins_n4"
