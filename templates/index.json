@@ -53,7 +53,7 @@
       "type": "prepared-banner",
       "settings": {
         "rating": "shopify://shop_images/star.webp",
-        "ratingCount": "<p>Trusted by 1,500,000+ American Families</p>",
+        "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
         "textstyle": "poppins_n4",
         "ratingFlex": true,
         "ratingAlingItems": "center"
