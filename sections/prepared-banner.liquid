@@ -5,9 +5,9 @@
   assign ratingFlex = section.settings.ratingFlex
 %}
 
-{% if ratingFlex == true %}
-  assing flex = 'flex'
-  {% endif %}
+{% if ratingFlex %}
+  {% assign flex = 'flex' %}
+{% endif %}
 
 <div class="banner_section">
   <div class="banner_content">
