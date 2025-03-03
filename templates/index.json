@@ -60,10 +60,20 @@
             "textColor": "#ff0000",
             "titleWidth": 50
           }
+        },
+        "title_W7kPXN": {
+          "type": "title",
+          "settings": {
+            "redTitle": "Fire Captain Approved",
+            "title": "Emergency Fire Blanket Stops Fire In Its Tracks",
+            "textColor": "#ff0000",
+            "titleWidth": 80
+          }
         }
       },
       "block_order": [
-        "title_Y9M998"
+        "title_Y9M998",
+        "title_W7kPXN"
       ],
       "settings": {
         "padding": "10px 10px",
