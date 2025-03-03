@@ -25,6 +25,8 @@
   .subtitle{
     font-family:{{textstyle}}
   }
+  .rating_container{
+}
 </style>
 
 {% schema %}
@@ -46,6 +48,12 @@
         "id": "textstyle",
         "label": "Font Family",
         "default": "poppins_n4"
+      },
+      {
+        "type": "checkbox",
+        "id": "ratingFlex",
+        "label": "Display Flex",
+        "default":false
       }
 
     ],
