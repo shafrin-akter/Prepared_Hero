@@ -65,10 +65,9 @@
           "type": "description",
           "settings": {
             "description": "<p>Feel prepared & stay calmwith our full suite of emergency preparedness solutions.</p><p></p>",
-            "fontSize": 16,
-            "fontFamily": "poppins_n4",
+            "fontSize": 17,
             "textColor": "#000000",
-            "descriptionWidth": 33
+            "descriptionWidth": 50
           }
         }
       },
