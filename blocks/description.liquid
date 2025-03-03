@@ -3,72 +3,69 @@
   assign textColor = block.settings.textColor
   assign descriptionWidth = block.settings.descriptionWidth
   assign fontSize = block.settings.fontSize
-  assign fontStyle = block.settings.fontFamily
+  assign fontStyle = block.settings.fontFamily | font_face
 %}
 
 <p class="description">{{ description }}</p>
 
 <style>
-
-  #shopify-block-{{ block.id }}{
-    max-width:100%;
-    width:{{descriptionWidth}}%;
+  #shopify-block-{{ block.id }} {
+    max-width: 100%;
+    width: {{ descriptionWidth }}%;
   }
-  #shopify-block-{{ block.id }} p{
-    color:{{textColor}};
-    font-size: {{fontSize}}px;
-    font-family:{{fontStyle}}
+  #shopify-block-{{ block.id }} p {
+    color: {{ textColor }};
+    font-size: {{ fontSize }}px;
+    font-family: {{ fontStyle }};
   }
 </style>
+
 {% schema %}
-  {
-    "name": "Description",
-    "settings": [
-    
-      {
-        "type": "richtext",
-        "label": "Description",
-        "id": "description",
-        "default":"<p>Description<p>"
-      },
-      {
-        "type": "range",
-        "label": "Font Size",
-        "id": "fontSize",
-        "unit": "px",
-        "step": 1,
-        "min": 0,
-        "max": 100,
-        "default":16
-        
-      },
-      {
-        "type": "font_picker",
-        "id": "fontFamily",
-        "label": "Font Style",
-        "default": "poppins_n4"
-      },
-      {
-        "type": "color",
-        "label": "Color",
-        "id": "textColor",
-        
-      },
-      {
-        "type": "range",
-        "id": "descriptionWidth",
-        "label": "Width",
-        "unit": "%",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "default":100
-      }
-    ],
-    "presets": [
-      {
-        "name": "Description"
-      }
-    ]
-  }
+{
+  "name": "Description",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Description",
+      "id": "description",
+      "default": "<p>Description</p>"
+    },
+    {
+      "type": "range",
+      "label": "Font Size",
+      "id": "fontSize",
+      "unit": "px",
+      "step": 1,
+      "min": 0,
+      "max": 100,
+      "default": 16
+    },
+    {
+      "type": "font_picker",
+      "id": "fontFamily",
+      "label": "Font Style",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "color",
+      "label": "Color",
+      "id": "textColor"
+    },
+    {
+      "type": "range",
+      "id": "descriptionWidth",
+      "label": "Width",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Description"
+    }
+  ]
+}
 {% endschema %}
