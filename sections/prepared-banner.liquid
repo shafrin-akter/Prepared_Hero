@@ -3,6 +3,7 @@
   assign ratingCount = section.settings.ratingCount
   assign textstyle = section.settings.textstyle
   assign ratingFlex = section.settings.ratingFlex
+  assign ratingAlingItems = section.settings.ratingAlingItems
 %}
 
 {% if ratingFlex %}
@@ -31,6 +32,7 @@
   }
   .rating_container{
     display:{{flex}};
+    align-items:{{ratingAlingItems}};
 }
 </style>
 
