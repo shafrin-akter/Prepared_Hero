@@ -4,8 +4,8 @@
   assign textColor = block.settings.textColor
 %}
 
-<h2> <span class="red">{{ redTitle }}</span> {{ title }}</h2>
-
+<h2 class="title"> <span class="red">{{ redTitle }}</span> {{ title }}</h2>
+{{ block.id }}
 <style>
   .red{
     color:{{textColor}};
