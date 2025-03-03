@@ -1,15 +1,12 @@
 {% liquid
-  assign redTitle = block.settings.redTitle
-  assign title = block.settings.title
+  assign description = block.settings.description
   assign textColor = block.settings.textColor
   assign descriptionWidth = block.settings.descriptionWidth
 %}
 
-<h2 class="title"> <span class="red">{{ redTitle }}</span> {{ title }}</h2>
+
 <style>
- #shopify-block-{{ block.id }} .red{
-    color:{{textColor}};
-  }
+
   #shopify-block-{{ block.id }}{
     max-width:100%;
     width:{{titleWidth}}%;
@@ -17,17 +14,14 @@
 </style>
 {% schema %}
   {
-    "name": "Block name",
+    "name": "Description",
     "settings": [
+    
       {
-        "type": "text",
-        "label": "Title",
-        "id": "redTitle"
-      },
-      {
-        "type": "text",
-        "label": "Title",
-        "id": "title"
+        "type": "richtext",
+        "label": "Description",
+        "id": "description",
+        "default":"<p>lfjkljf<p>"
       },
       {
         "type": "color",
