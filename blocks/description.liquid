@@ -3,13 +3,12 @@
   assign textColor = block.settings.textColor
   assign descriptionWidth = block.settings.descriptionWidth
   assign fontSize = block.settings.fontSize
-  assign fontStyle = block.settings.fontFamily | font_family 
+  assign fontStyle = block.settings.fontFamily
 %}
 
 <p class="description">{{ description }}</p>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
   #shopify-block-{{ block.id }} {
     max-width: 100%;
