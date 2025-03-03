@@ -14,6 +14,7 @@
   }
   .descriptionWidth{
     color:{{textColor}}
+    font-size:
   }
 </style>
 {% schema %}
@@ -26,6 +27,17 @@
         "label": "Description",
         "id": "description",
         "default":"<p>Description<p>"
+      },
+      {
+        "type": "range",
+        "label": "Font Size",
+        "id": "fontSize",
+        "unit": "px",
+        "step": 1,
+        "min": 0,
+        "max": 100,
+        "default":16
+        
       },
       {
         "type": "color",
