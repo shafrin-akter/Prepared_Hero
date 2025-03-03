@@ -2,7 +2,7 @@
   assign redTitle = block.settings.redTitle
   assign title = block.settings.title
   assign textColor = block.settings.textColor
-  assign titleWidth = block.settings.titleWidth
+  assign descriptionWidth = block.settings.descriptionWidth
 %}
 
 <h2 class="title"> <span class="red">{{ redTitle }}</span> {{ title }}</h2>
@@ -37,7 +37,7 @@
       },
       {
         "type": "range",
-        "id": "titleWidth",
+        "id": "descriptionWidth",
         "label": "Width",
         "unit": "%",
         "min": 0,
