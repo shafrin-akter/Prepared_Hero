@@ -1,4 +1,7 @@
 {% liquid
+ assign padding = section.settings.padding
+
+  
   assign rating = section.settings.rating
   assign ratingCount = section.settings.ratingCount
   assign textstyle = section.settings.textstyle
@@ -7,7 +10,7 @@
 
 
 
-<div class="banner_section">
+<div class="banner_section {{ section.id }}">
   <div class="banner_content">
     <div class="rating_container">
      {% if rating != blank %}
@@ -25,6 +28,10 @@
 </div>
 
 <style>
+  .{{ section.id }}{
+    padding:{{padding}}
+  }
+  
   .subtitle{
     margin:0;
   }
