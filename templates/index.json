@@ -65,6 +65,8 @@
         "title_Y9M998"
       ],
       "settings": {
+        "padding": "10px 10px",
+        "section_width": "900px",
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
         "textstyle": "poppins_n4"
