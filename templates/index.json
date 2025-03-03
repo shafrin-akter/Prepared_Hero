@@ -54,7 +54,8 @@
       "settings": {
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p>Trusted by 1,500,000+ American Families</p>",
-        "textstyle": "mono"
+        "textstyle": "mono",
+        "ratingFlex": true
       }
     }
   },
