@@ -73,7 +73,8 @@
         "product_advantages_VCJ97n": {
           "type": "product-advantages",
           "settings": {
-            "flex": true
+            "flex": false,
+            "advantages": ""
           }
         }
       },
