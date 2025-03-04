@@ -73,9 +73,9 @@
         "product_advantages_VCJ97n": {
           "type": "product-advantages",
           "settings": {
-            "flex": false,
+            "flex": true,
             "img": "shopify://shop_images/icon1.png",
-            "advantages": ""
+            "advantages": "Compact andEasily Stored"
           }
         }
       },
