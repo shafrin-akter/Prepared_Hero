@@ -1,7 +1,22 @@
+{% liquid
+  assign flex = block.settings.flex
+%}
+
+<div>
+  
+</div>
+
 {% schema %}
   {
     "name": "Product Advantages",
-    "settings": [],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flex",
+        "label": "Flex",
+        "default":true
+      }
+    ],
     "presets": [
       {
         "name": "Product Advantages"
