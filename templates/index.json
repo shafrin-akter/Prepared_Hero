@@ -69,11 +69,18 @@
             "textColor": "#000000",
             "descriptionWidth": 40
           }
+        },
+        "product_advantages_VCJ97n": {
+          "type": "product-advantages",
+          "settings": {
+            "flex": true
+          }
         }
       },
       "block_order": [
         "title_Y9M998",
-        "description_CUH3nq"
+        "description_CUH3nq",
+        "product_advantages_VCJ97n"
       ],
       "settings": {
         "padding": "10px 10px",
