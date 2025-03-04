@@ -1,6 +1,13 @@
 {% liquid
   assign flex = block.settings.flex
+  
 %}
+
+{% if flex == true %}
+  
+  {% assign display-flex = "flex" %}
+  
+{% endif %}
 
 <div>
   
