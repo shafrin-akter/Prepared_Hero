@@ -77,21 +77,12 @@
             "img": "shopify://shop_images/icon1.png",
             "advantages": "Compact andEasily Stored"
           }
-        },
-        "product_advantages_VCJ97n": {
-          "type": "product-advantages",
-          "settings": {
-            "flex": true,
-            "img": "shopify://shop_images/icon2.webp",
-            "advantages": "No MessyClean Up"
-          }
         }
       },
       "block_order": [
         "title_Y9M998",
         "description_CUH3nq",
-        "product_advantages_hFMnbw",
-        "product_advantages_VCJ97n"
+        "product_advantages_hFMnbw"
       ],
       "settings": {
         "padding": "10px 10px",
