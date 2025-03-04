@@ -74,6 +74,7 @@
           "type": "product-advantages",
           "settings": {
             "flex": false,
+            "img": "shopify://shop_images/icon1.png",
             "advantages": ""
           }
         }
