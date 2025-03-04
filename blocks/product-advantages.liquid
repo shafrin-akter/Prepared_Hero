@@ -1,5 +1,6 @@
 {% liquid
   assign flex = block.settings.flex
+  assign img = block.settings.img
   
 %}
 
@@ -10,7 +11,9 @@
 {% endif %}
 
 <div class="product-advantages">
-  
+  <div class="content">
+    <img src=""  />
+  </div>
 </div>
 
 <style>
@@ -27,6 +30,11 @@
         "id": "flex",
         "label": "Display Flex",
         "default":false
+      },
+      {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "img"
       }
     ],
     "presets": [
