@@ -1,6 +1,7 @@
 {% liquid
   assign flex = block.settings.flex
   assign img = block.settings.img
+  assign advantages = block.settings.advantages
   
 %}
 
@@ -12,7 +13,8 @@
 
 <div class="product-advantages">
   <div class="content">
-    <img src=""  />
+    <img src="{{ img | img_url:"12200x" }}"  />
+    <h3>{{ advantages }}</h3>
   </div>
 </div>
 
@@ -35,6 +37,11 @@
         "type": "image_picker",
         "label": "Image",
         "id": "img"
+      },
+      {
+        "type": "text",
+        "label": "Text",
+        "id": "advantages"
       }
     ],
     "presets": [
