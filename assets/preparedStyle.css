@@ -44,3 +44,8 @@
   margin:0;
   font-weight:700;
 }
+.advantages-content{
+  display:flex;
+  align-items:center;
+  
+}
