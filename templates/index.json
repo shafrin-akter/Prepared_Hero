@@ -77,12 +77,17 @@
             "img": "shopify://shop_images/icon1.png",
             "advantages": "Compact andEasily Stored"
           }
+        },
+        "button_Wd9eta": {
+          "type": "button",
+          "settings": {}
         }
       },
       "block_order": [
         "title_Y9M998",
         "description_CUH3nq",
-        "product_advantages_hFMnbw"
+        "product_advantages_hFMnbw",
+        "button_Wd9eta"
       ],
       "settings": {
         "padding": "10px 10px",
