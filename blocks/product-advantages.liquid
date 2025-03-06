@@ -1,15 +1,6 @@
-{% liquid
-  assign flex = block.settings.flex
-  assign img = block.settings.img
-  assign advantages = block.settings.advantages
-  
-%}
 
-{% if flex == true %}
-  
-  {% assign display-flex = "flex" %}
-  
-{% endif %}
+
+
 
 <div class="product-advantages {{ block.id }}">
  {% content_for 'blocks' %}
