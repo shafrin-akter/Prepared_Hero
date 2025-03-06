@@ -82,24 +82,24 @@
           "type": "product-advantages",
           "settings": {},
           "blocks": {
-            "advantages_item_AyCJcV": {
-              "type": "advantages-item",
-              "settings": {
-                "icon": "shopify://shop_images/icon2.webp",
-                "iconContent": "fdsf"
-              }
-            },
             "advantages_item_ceF4YF": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon1.png",
                 "iconContent": "fdsf"
               }
+            },
+            "advantages_item_AyCJcV": {
+              "type": "advantages-item",
+              "settings": {
+                "icon": "shopify://shop_images/icon2.webp",
+                "iconContent": "fdsf"
+              }
             }
           },
           "block_order": [
-            "advantages_item_AyCJcV",
-            "advantages_item_ceF4YF"
+            "advantages_item_ceF4YF",
+            "advantages_item_AyCJcV"
           ]
         }
       },
