@@ -52,3 +52,9 @@
   padding:5px;
   
 }
+.advantages-content:last-child{
+  
+  border-right: 0px solid black;
+
+  
+}
