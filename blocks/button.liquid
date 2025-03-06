@@ -1,9 +1,13 @@
+{% liquid
+  assign top = block.settings.topText
+  assign bottomText = block.settings.bottomText
+%}
 <div>
-  <p>Bundle Discounts Now Available</p>
+  <p>{{ top }}</p>
   <a>Get Prepared Today!</a>
   <div>
     <img src="{{ icon | asset_url }}">
-    <p>Try It Risk-Free With Our 30-Day HERO Guarantee</p>
+    <p>{{ bottomText }}</p>
   </div>
   
 </div>
@@ -11,7 +15,24 @@
 {% schema %}
   {
     "name": "Button",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "label": "Top Text",
+        "id": "topText"
+      },
+      {
+        "type": "text",
+        "label": "Bottom Text",
+        "id": "bottomText"
+      },
+      {
+        "type": "text",
+        "label": "Button",
+        "id": "buttonText"
+      },
+      
+    ],
     "presets": [
       {
         "name": "Button"
