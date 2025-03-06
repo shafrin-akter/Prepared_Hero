@@ -97,14 +97,14 @@
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon2.webp",
-                "iconContent": "<strong>No MessyClean Up</strong>"
+                "iconContent": "<strong>No Messy Clean Up</strong>"
               }
             },
             "advantages_item_6KrgDn": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon3.png",
-                "iconContent": "<strong>ReusableNo Expiry</strong>"
+                "iconContent": "<strong>Reusable No Expiry</strong>"
               }
             }
           },
