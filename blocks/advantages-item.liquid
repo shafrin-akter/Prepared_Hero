@@ -1,11 +1,12 @@
 {% liquid
   assign icon = block.settings.icon
+  assign iconContent = block.settings.iconContent
 %}
  <div class="advantages-content">
    {% if img != blank %}
      <img src="{{ icon | img_url:"1200x" }}"  />
     {% endif %}
-    <h3 class="poppins-semibold">{{ advantages }}</h3>
+    <h3 class="poppins-semibold">{{ iconContent }}</h3>
 </div>
 
 {% schema %}
@@ -17,6 +18,11 @@
         "type": "image_picker",
         "id": "icon",
         "label": "Icon"
+      },
+      {
+        "type": "inline_richtext",
+        "label": "Icon Content",
+        "id": "iconContent"
       }
     ],
     "presets": [
