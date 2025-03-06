@@ -72,14 +72,14 @@
         },
         "product_advantages_hFMnbw": {
           "type": "product-advantages",
-          "settings": {
-            "flex": true,
-            "img": "shopify://shop_images/icon1.png",
-            "advantages": "Compact andEasily Stored"
-          }
+          "settings": {}
         },
         "button_Wd9eta": {
           "type": "button",
+          "settings": {}
+        },
+        "product_advantages_JKYKV9": {
+          "type": "product-advantages",
           "settings": {}
         }
       },
@@ -87,7 +87,8 @@
         "title_Y9M998",
         "description_CUH3nq",
         "product_advantages_hFMnbw",
-        "button_Wd9eta"
+        "button_Wd9eta",
+        "product_advantages_JKYKV9"
       ],
       "settings": {
         "padding": "10px 10px",
