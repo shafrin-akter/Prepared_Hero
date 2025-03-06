@@ -86,20 +86,28 @@
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon1.png",
-                "iconContent": "fdsf"
+                "iconContent": "<strong>Compact andEasily Stored</strong>"
               }
             },
             "advantages_item_AyCJcV": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon2.webp",
-                "iconContent": "fdsf"
+                "iconContent": "<strong>No MessyClean Up</strong>"
+              }
+            },
+            "advantages_item_6KrgDn": {
+              "type": "advantages-item",
+              "settings": {
+                "icon": "shopify://shop_images/icon3.png",
+                "iconContent": "<strong>ReusableNo Expiry</strong>"
               }
             }
           },
           "block_order": [
             "advantages_item_ceF4YF",
-            "advantages_item_AyCJcV"
+            "advantages_item_AyCJcV",
+            "advantages_item_6KrgDn"
           ]
         }
       },
