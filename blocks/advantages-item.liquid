@@ -3,7 +3,7 @@
   assign iconContent = block.settings.iconContent
 %}
  <div class="advantages-content">
-   {% if img != blank %}
+   {% if icon != blank %}
      <img src="{{ icon | img_url:"1200x" }}"  />
     {% endif %}
     <h3 class="poppins-semibold">{{ iconContent }}</h3>
