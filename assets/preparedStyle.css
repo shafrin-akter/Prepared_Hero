@@ -52,3 +52,6 @@
   padding:5px;
   
 }
+.product-advantages:last-child{
+   border-right: 0px solid black;
+}
