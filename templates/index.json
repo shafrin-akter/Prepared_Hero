@@ -88,6 +88,13 @@
             "icon": "shopify://shop_images/icon1.png",
             "iconContent": "qew"
           }
+        },
+        "advantages_item_PXxnKr": {
+          "type": "advantages-item",
+          "settings": {
+            "icon": "shopify://shop_images/icon2.webp",
+            "iconContent": "qew"
+          }
         }
       },
       "block_order": [
@@ -96,7 +103,8 @@
         "product_advantages_hFMnbw",
         "button_Wd9eta",
         "product_advantages_JKYKV9",
-        "advantages_item_84XqK7"
+        "advantages_item_84XqK7",
+        "advantages_item_PXxnKr"
       ],
       "settings": {
         "padding": "10px 10px",
