@@ -1,10 +1,17 @@
 {% liquid
   assign top = block.settings.topText
   assign bottomText = block.settings.bottomText
+  assign buttonText = block.settings.buttonText
+  assign url = block.settings.url
 %}
 <div>
-  <p>{{ top }}</p>
-  <a>Get Prepared Today!</a>
+  {% if top != blank %}
+   <p>{{ top }}</p>
+  {% endif %}
+  {% if bottomText != blank %}
+   <a href="{{ url}}">{{ buttonText }}</a>
+  {% endif %}
+  
  {% if bottomText != blank %}
    <div>
     <img src="{{ 'icon.png' | asset_url }}" width="15" height="15"  alt="Icon">
@@ -33,6 +40,11 @@
         "label": "Button",
         "id": "buttonText"
       },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Add URL"
+      }
       
       
     ],
