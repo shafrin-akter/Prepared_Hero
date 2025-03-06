@@ -48,9 +48,9 @@
 .advantages-content{
   display:flex;
   align-items:center;
-  gap:5px;
+  gap:10px;
   border-right: 1px solid #c0c0c0;
-  padding-right:15px;
+  padding-right:10px;
   
 }
 .product-advantages .advantages-content:last-child {
