@@ -72,7 +72,9 @@
         },
         "product_advantages_hFMnbw": {
           "type": "product-advantages",
-          "settings": {}
+          "settings": {
+            "width": 100
+          }
         },
         "button_Wd9eta": {
           "type": "button",
@@ -80,13 +82,15 @@
         },
         "product_advantages_JKYKV9": {
           "type": "product-advantages",
-          "settings": {},
+          "settings": {
+            "width": 56
+          },
           "blocks": {
             "advantages_item_ceF4YF": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon1.png",
-                "iconContent": "<strong>Compact andEasily Stored</strong>"
+                "iconContent": "<strong>Compact and Easily Stored</strong>"
               }
             },
             "advantages_item_AyCJcV": {
