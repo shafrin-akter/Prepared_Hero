@@ -5,10 +5,12 @@
 <div>
   <p>{{ top }}</p>
   <a>Get Prepared Today!</a>
-  <div>
+ {% if bottomText != blank %}
+   <div>
     <img src="{{ 'icon.png' | asset_url }}" width="15" height="15"  alt="Icon">
     <p>{{ bottomText }}</p>
   </div>
+  {% endif %}
   
 </div>
 
