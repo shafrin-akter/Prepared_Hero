@@ -76,10 +76,6 @@
             "width": 100
           }
         },
-        "button_Wd9eta": {
-          "type": "button",
-          "settings": {}
-        },
         "product_advantages_JKYKV9": {
           "type": "product-advantages",
           "settings": {
@@ -113,14 +109,18 @@
             "advantages_item_AyCJcV",
             "advantages_item_6KrgDn"
           ]
+        },
+        "button_Wd9eta": {
+          "type": "button",
+          "settings": {}
         }
       },
       "block_order": [
         "title_Y9M998",
         "description_CUH3nq",
         "product_advantages_hFMnbw",
-        "button_Wd9eta",
-        "product_advantages_JKYKV9"
+        "product_advantages_JKYKV9",
+        "button_Wd9eta"
       ],
       "settings": {
         "padding": "10px 10px",
