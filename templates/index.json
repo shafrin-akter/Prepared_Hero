@@ -106,20 +106,12 @@
                 "icon": "shopify://shop_images/icon3.png",
                 "iconContent": "<strong>Reusable No Expiry</strong>"
               }
-            },
-            "advantages_item_zXiyTd": {
-              "type": "advantages-item",
-              "settings": {
-                "icon": "shopify://shop_images/icon3.png",
-                "iconContent": "<strong>Reusable No Expiry</strong>"
-              }
             }
           },
           "block_order": [
             "advantages_item_ceF4YF",
             "advantages_item_AyCJcV",
-            "advantages_item_6KrgDn",
-            "advantages_item_zXiyTd"
+            "advantages_item_6KrgDn"
           ]
         }
       },
