@@ -80,21 +80,27 @@
         },
         "product_advantages_JKYKV9": {
           "type": "product-advantages",
-          "settings": {}
-        },
-        "advantages_item_84XqK7": {
-          "type": "advantages-item",
-          "settings": {
-            "icon": "shopify://shop_images/icon1.png",
-            "iconContent": "qew"
-          }
-        },
-        "advantages_item_PXxnKr": {
-          "type": "advantages-item",
-          "settings": {
-            "icon": "shopify://shop_images/icon2.webp",
-            "iconContent": "qew"
-          }
+          "settings": {},
+          "blocks": {
+            "advantages_item_AyCJcV": {
+              "type": "advantages-item",
+              "settings": {
+                "icon": "shopify://shop_images/icon2.webp",
+                "iconContent": "fdsf"
+              }
+            },
+            "advantages_item_ceF4YF": {
+              "type": "advantages-item",
+              "settings": {
+                "icon": "shopify://shop_images/icon1.png",
+                "iconContent": "fdsf"
+              }
+            }
+          },
+          "block_order": [
+            "advantages_item_AyCJcV",
+            "advantages_item_ceF4YF"
+          ]
         }
       },
       "block_order": [
@@ -102,9 +108,7 @@
         "description_CUH3nq",
         "product_advantages_hFMnbw",
         "button_Wd9eta",
-        "product_advantages_JKYKV9",
-        "advantages_item_84XqK7",
-        "advantages_item_PXxnKr"
+        "product_advantages_JKYKV9"
       ],
       "settings": {
         "padding": "10px 10px",
