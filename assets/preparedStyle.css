@@ -53,5 +53,5 @@
   
 }
 .product-advantages .advantages-content:last-child {
-    border-right: 0px solid black;
+    border-right: 0;
 }
