@@ -53,6 +53,6 @@
   padding-right:10px;
   
 }
-.product-advantages .advantages-content:last-child {
-    border: none;
+.product-advantages .advantages-content:last-of-type {
+    border-right: none;
 }
