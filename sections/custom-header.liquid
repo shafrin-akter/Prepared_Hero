@@ -13,8 +13,21 @@
               href="{{ menu.url }}">{{ menu.title }}
             </a>
           </li>
+          
           {% if menu.links != blank %}
-            hello
+            <li>
+              <div>
+                <span>{{ menu.title }}></span>
+              </div>
+            </li>
+            
+          {% else %}
+          <li>
+            <a 
+              class="{% if menu.active %} active {% endif %} poppins-regular" 
+              href="{{ menu.url }}">{{ menu.title }}
+            </a>
+          </li>
           {% endif %}
         {% endfor %}
        
