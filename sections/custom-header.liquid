@@ -15,6 +15,13 @@
                 <span class="poppins-regular">{{ menu.title }}></span>
                 <ul>
                   {% for child in menu.links %}
+                    <li>
+                      <a 
+                        class="childItem {% if child.active %} active {% endif %} poppins-regular" 
+                        href="{{ menu.url }}">
+                        {{ child.title }}
+                      </a>
+                    </li>
                   {% endfor %}
                 </ul>
               </div>
