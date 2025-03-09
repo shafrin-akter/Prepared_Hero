@@ -13,6 +13,10 @@
             <li>
               <div class="menuItem dropdown poppins-regular">
                 <span class="poppins-regular">{{ menu.title }}></span>
+                <ul>
+                  {% for child in menu.links %}
+                  {% endfor %}
+                </ul>
               </div>
             </li>
             
