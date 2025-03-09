@@ -7,7 +7,7 @@
     <nav>
       <ul class="menuPart">
         {% for menu in menus %}
-          <li><a {% if menu.active %} active {% endif %} href="{{ menu.url }}">{{ menu.title }}</a></li>
+          <li><a class="{% if menu.active %} active {% endif %}" href="{{ menu.url }}">{{ menu.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
