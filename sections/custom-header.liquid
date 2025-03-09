@@ -7,8 +7,17 @@
     <nav>
       <ul class="menuPart">
         {% for menu in menus %}
-          <li><a class="{% if menu.active %} active {% endif %} poppins-regular" href="{{ menu.url }}">{{ menu.title }}</a></li>
+          <li>
+            <a 
+              class="{% if menu.active %} active {% endif %} poppins-regular" 
+              href="{{ menu.url }}">{{ menu.title }}
+            </a>
+          </li>
+          {% if menu.links %}
+            hello
+          {% endif %}
         {% endfor %}
+       
       </ul>
     </nav>
     <div class="cart"></div>
