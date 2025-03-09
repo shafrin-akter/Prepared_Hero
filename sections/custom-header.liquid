@@ -17,7 +17,7 @@
                   {% for child in menu.links %}
                     <li>
                       <a 
-                        class="childItem {% if child.active %} active {% endif %} poppins-regular" 
+                        class="childItem menuItem {% if child.active %} active {% endif %} poppins-regular" 
                         href="{{ menu.url }}">
                         {{ child.title }}
                       </a>
