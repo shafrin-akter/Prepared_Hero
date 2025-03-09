@@ -7,7 +7,12 @@
     <nav>
       <ul>
         {% for menu in menus %}
-          <li>{{ menu.url }}</li>
+          <li>
+            <strong>URL</strong>{{ menu.url }}
+            <strong>title</strong>{{ menu.title }}
+            <strong>levels</strong>{{ menu.levels }}
+            <strong>handle</strong>{{ menu.handle }}
+          </li>
         {% endfor %}
       </ul>
     </nav>
