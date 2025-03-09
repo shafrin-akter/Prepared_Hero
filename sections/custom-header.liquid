@@ -11,7 +11,7 @@
           
           {% if menu.links != blank %}
             <li>
-              <div>
+              <div class="menuItem dropdown">
                 <span>{{ menu.title }}></span>
               </div>
             </li>
@@ -19,7 +19,7 @@
           {% else %}
           <li>
             <a 
-              class="{% if menu.active %} active {% endif %} poppins-regular" 
+              class="menuItem {% if menu.active %} active {% endif %} poppins-regular" 
               href="{{ menu.url }}">{{ menu.title }}
             </a>
           </li>
