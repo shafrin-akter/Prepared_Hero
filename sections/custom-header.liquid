@@ -5,7 +5,7 @@
   <div class="container">
     <div class="logo"></div>
     <nav>
-      <ul>
+      <ul class="menuPart">
         {% for menu in menus %}
           <li><a href="{{ menu.url }}">{{ menu.title }}</a></li>
         {% endfor %}
@@ -31,5 +31,8 @@
     max-width:1300px;
     width:100%;
     margin:0 auto;
+  }
+  nav .menuPart{
+    display:flex;
   }
 </style>
