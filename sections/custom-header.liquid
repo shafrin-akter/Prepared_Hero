@@ -1,7 +1,16 @@
+{% liquid
+  assign menus = section.settings.menu
+%}
 <div class="headerSection">
   <div class="container">
     <div class="logo"></div>
-    <nav></nav>
+    <nav>
+      <ul>
+        {% for menu in menus %}
+          
+        {% endfor %}
+      </ul>
+    </nav>
     <div class="cart"></div>
   </div>
 </div>
