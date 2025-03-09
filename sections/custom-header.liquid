@@ -7,7 +7,7 @@
     <nav>
       <ul class="menuPart">
         {% for menu in menus %}
-          <li><a class="{% if menu.active %} active {% endif %}" href="{{ menu.url }}">{{ menu.title }}</a></li>
+          <li><a class="{% if menu.active %} active {% endif %} poppins-regular" href="{{ menu.url }}">{{ menu.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -43,6 +43,7 @@ nav .menuPart a{
   color:#000;
   display:block;
   padding:5px 10px;
+  font-sixe:
 }
 nav .menuPart a.active{
   background-color:#d70000;
