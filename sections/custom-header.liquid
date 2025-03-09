@@ -13,7 +13,7 @@
               href="{{ menu.url }}">{{ menu.title }}
             </a>
           </li>
-          {% if menu.links %}
+          {% if menu.links != blank %}
             hello
           {% endif %}
         {% endfor %}
