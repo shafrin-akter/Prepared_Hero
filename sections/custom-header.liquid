@@ -13,7 +13,7 @@
             <li>
               <div class="menuItem dropdown poppins-regular">
                 <span class="poppins-regular">{{ menu.title }}></span>
-                <ul>
+                <ul class="dropdown">
                   {% for child in menu.links %}
                     <li>
                       <a 
@@ -79,4 +79,10 @@ nav .menuPart .menuItem.active{
   
  
 }
+.menuItem.dropdown{}
+.menuItem.dropdown:hover .dropdown{}
+.menuItem.dropdown:hover .dropdown .childItem{}
+.menuItem.dropdown:hover .dropdown .childItem:hover{}
+
+
 </style>
