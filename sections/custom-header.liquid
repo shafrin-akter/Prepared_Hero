@@ -7,7 +7,7 @@
     <nav>
       <ul class="menuPart">
         {% for menu in menus %}
-          <li><a href="{{ menu.url }}">{{ menu.title }}</a></li>
+          <li><a {% if menu.active %} active {% endif %} href="{{ menu.url }}">{{ menu.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -44,7 +44,7 @@ nav .menuPart a{
   display:block;
   padding:5px 10px;
 }
-nav .menuPart a:active{
+nav .menuPart a .active{
   background-color:#000;
   color:red;
   
