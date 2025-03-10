@@ -25,8 +25,7 @@
   {% for child in menu.links %}
     {% assign collection = collections[child.handle] %}
     
-   <div  class="dropdownItem">
-      <li>
+    <li class="dropdownItem">
         {% if collection.image %}
         <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
       {% elsif collection.products.first.featured_image %}
@@ -40,7 +39,6 @@
 
     
     </li>
-   </div>
   {% endfor %}
 </ul>
 
