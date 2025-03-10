@@ -5,7 +5,7 @@
     position:relative;
     display:flex
   }
-.logo{
+.logo img{
   width: 256px;
 }
  nav .menuPart {
