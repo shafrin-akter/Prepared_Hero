@@ -34,14 +34,14 @@
                     </ul>
                   {% elsif  menu.levels == 2 %} 
                       <div class=" megamenu ">
+                       
                       {% for child in menu.links %}
-                        <li>
-                          <a 
-                            class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular" 
-                            href="{{ child.url }}">
+                         <div class="megamenuItem">
+                          <h3 
+                            class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular">
                             {{ child.title }}
-                          </a>
-                        </li>
+                          </h3>
+                        </div>
                       {% endfor %}
                     </div>
                   {% endif %}
