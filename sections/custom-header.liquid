@@ -21,17 +21,26 @@
                 <span class="poppins-regular">{{ menu.title }}  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
 
                 {% if menu.levels == 1 %} 
-                     <ul class="dropdown ">
-                        {% for child in menu.links %}
-                          <li>
-                            <a 
-                              class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular" 
-                              href="{{ child.url }}">
-                              {{ child.title }}
-                            </a>
-                          </li>
-                        {% endfor %}
-                    </ul>
+                     <ul class="dropdown">
+  {% for child in menu.links %}
+    {% assign collection = collections[child.handle] %} <!-- Corrected from grandchild to child -->
+    
+    <li class="mega-menu-item">
+      <a 
+        class="childItem poppins-regular {% if child.active %} active {% endif %}" 
+        href="{{ child.url }}">
+        {{ child.title }}
+      </a>
+
+      {% if collection.image %}
+        <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
+      {% elsif collection.products.first.featured_image %}
+        <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
                   {% elsif  menu.levels == 2 %} 
                       <div class=" megamenu ">
                        
