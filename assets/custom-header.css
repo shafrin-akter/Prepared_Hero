@@ -23,7 +23,7 @@ nav .menuPart .menuItem.active{
  
 }
 .menuItem.dropdown{
-  position: relative;
+  /* position: relative; */
 }
 .menuItem.dropdown .dropdown{
   list-style:none;
@@ -56,6 +56,7 @@ nav .menuPart .menuItem.active{
     transform: translateY(20px);
     /* opacity: 0;
     transition-duration:0.4s; */
+  left: 0
 }
 .menuItem.dropdown:hover .dropdown {
    transform: translateY(0px);
