@@ -46,9 +46,16 @@ nav .menuPart .menuItem.active{
     opacity: 0;
     transition-duration:0.4s;
     border: 1px solid red;
-   left:0;
-  background-color: #fff;
-  display:flex;
+    left:0;
+    background-color: #fff;
+    display:flex;
+}
+.menuItem.dropdown .dropdownItem  {
+   
+}
+.menuItem.dropdown .dropdownItem img {
+  width:44px;
+   
 }
 .menuItem.dropdown .megamenu {
     list-style: none;
