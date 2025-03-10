@@ -25,7 +25,7 @@
   {% for child in menu.links %}
     {% assign collection = collections[child.handle] %}
     
-    <li class="mega-menu-item">
+    <li class="drodownItem">
         {% if collection.image %}
         <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
       {% elsif collection.products.first.featured_image %}
@@ -42,7 +42,7 @@
   {% endfor %}
 </ul>
 
-                  {% elsif  menu.levels == 2 %} 
+                {% elsif  menu.levels == 2 %} 
                       <div class=" megamenu ">
                        
                       {% for child in menu.links %}
