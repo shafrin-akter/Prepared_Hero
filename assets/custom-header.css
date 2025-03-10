@@ -39,7 +39,6 @@ nav .menuPart .menuItem.active{
 }
 .menuItem.dropdown .dropdown {
     list-style: none;
-    max-width: 300px;
     width: 100%;
     margin: 10px;
     position: absolute;
@@ -49,6 +48,7 @@ nav .menuPart .menuItem.active{
     border: 1px solid red;
    left:0;
   background-color: #fff;
+  display:flex;
 }
 .menuItem.dropdown .megamenu {
     list-style: none;
