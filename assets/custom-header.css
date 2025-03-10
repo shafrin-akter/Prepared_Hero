@@ -59,6 +59,7 @@ nav .menuPart .menuItem.active{
     width: 150px;
     margin: 0 auto;
     display: block;
+  border-radius: 10px;
    
 }
 .menuItem.dropdown .megamenu {
