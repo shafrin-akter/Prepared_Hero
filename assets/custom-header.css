@@ -5,6 +5,9 @@
     position:relative;
     display:flex
   }
+.logo{
+  width: 256px;
+}
  nav .menuPart {
     display: flex;
     list-style: none;
