@@ -68,6 +68,10 @@ nav .menuPart .menuItem.active{
   padding-bottom: 10px;
    
 }
+.dropdowntext{
+  font-size:22px;
+  font-weight:500;
+}
 .menuItem.dropdown .megamenu {
     list-style: none;
     min-width: 300px;
