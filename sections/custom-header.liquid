@@ -7,7 +7,9 @@
     <div class="logo">
       {% for menu in menus %}
         {% for child in menu.links %}
-          
+          {% for granchild in child.links %}
+            
+          {% endfor %}
         {% endfor %}
         
       {% endfor %}
