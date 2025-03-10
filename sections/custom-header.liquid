@@ -1,18 +1,7 @@
 {{ "custom-header.css" | asset_url | stylesheet_tag }}
 {% liquid
   assign menus = section.settings.menu.links
-  for menu in menus
-    assign granchild = false
-    assign dropdown = false
-    
-    if menu.levels == 1
-      assign dropdown = true
-    endif
-    
-    if menu.levels == 2
-      assign granchild = true
-    endif
-  endfor
+ 
 %}
 <div class="headerSection">
   <div class="container">
@@ -38,7 +27,7 @@
             <li>
               <div class="menuItem dropdown poppins-regular">
                 <span class="poppins-regular">{{ menu.title }}  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
-                <ul class="dropdown {% if menu.levels == 2 %} meghamenu {% endif %} }">
+                <ul class="dropdown {% if menu.levels == 2 %} meghamenu {% else %} {% endif %} }">
                   {% for child in menu.links %}
                     <li>
                       <a 
