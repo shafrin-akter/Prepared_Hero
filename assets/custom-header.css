@@ -54,7 +54,10 @@ nav .menuPart .menuItem.active{
   padding: 35px 0;
 }
 .dropdownItem  {
-   display:block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .menuItem.dropdown .dropdownItem img {
     width: 150px;
