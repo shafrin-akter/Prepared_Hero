@@ -52,7 +52,7 @@ nav .menuPart .menuItem.active{
     display:flex;
   justify-content: center;
 }
-.menuItem.dropdown .dropdownItem  {
+.dropdownItem  {
    display:block;
 }
 .menuItem.dropdown .dropdownItem img {
