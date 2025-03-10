@@ -7,6 +7,9 @@
     justify-content: center;
     align-items: center;
   }
+.logo{
+  width: 20%;
+}
 .logo img{
   width: 256px;
   display: block;
