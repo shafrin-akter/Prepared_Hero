@@ -26,17 +26,18 @@
     {% assign collection = collections[child.handle] %}
     
     <li class="mega-menu-item">
+        {% if collection.image %}
+        <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
+      {% elsif collection.products.first.featured_image %}
+        <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
+      {% endif %}
       <a 
         class="childItem poppins-regular {% if child.active %} active {% endif %}" 
         href="{{ child.url }}">
         {{ child.title }}
       </a>
 
-      {% if collection.image %}
-        <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
-      {% elsif collection.products.first.featured_image %}
-        <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
-      {% endif %}
+    
     </li>
   {% endfor %}
 </ul>
