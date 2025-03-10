@@ -9,6 +9,7 @@
   }
 .logo img{
   width: 256px;
+  display: block;
 }
  nav .menuPart {
     display: flex;
