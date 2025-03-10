@@ -41,9 +41,11 @@
                             class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular">
                             {{ child.title }}
                           </h3>
-                           {% for grandchild in child.links %}
-                             
-                           {% endfor %}
+                           <div class="megalist">
+                             {% for grandchild in child.links %}
+                               
+                             {% endfor %}
+                           </div>
                         </div>
                       {% endfor %}
                     </div>
