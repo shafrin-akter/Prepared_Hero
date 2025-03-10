@@ -1,6 +1,13 @@
 {{ "custom-header.css" | asset_url | stylesheet_tag }}
 {% liquid
   assign menus = section.settings.menu.links
+  for menu in menus
+    assign granchild = false
+    assign dropdown = false
+    if menu.levels == 1
+      assign granchild = true
+    endif
+  endfor
 %}
 <div class="headerSection">
   <div class="container">
