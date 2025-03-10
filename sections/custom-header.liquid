@@ -20,18 +20,32 @@
               <div class="menuItem dropdown poppins-regular">
                 <span class="poppins-regular">{{ menu.title }}  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
 
+                {% if menu.levels == 1 %} 
+                     <ul class="dropdown ">
+                        {% for child in menu.links %}
+                          <li>
+                            <a 
+                              class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular" 
+                              href="{{ child.url }}">
+                              {{ child.title }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                    </ul>
+                  {% elsif  menu.levels == 2 %} 
+                      <ul class=" megamenu ">
+                      {% for child in menu.links %}
+                        <li>
+                          <a 
+                            class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular" 
+                            href="{{ child.url }}">
+                            {{ child.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
                 
-                <ul class=" {% if menu.levels == 2 %} megamenu {% else %} dropdown {% endif %} ">
-                  {% for child in menu.links %}
-                    <li>
-                      <a 
-                        class="childItem poppins-regular {% if child.active %} active {% endif %} poppins-regular" 
-                        href="{{ child.url }}">
-                        {{ child.title }}
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
               </div>
             </li>
             
