@@ -47,6 +47,16 @@ nav .menuPart .menuItem.active{
     opacity: 0;
     transition-duration:0.4s;
 }
+.menuItem.dropdown .megamenu {
+    list-style: none;
+    min-width: 300px;
+    width: 100%;
+    margin: 10px;
+    position: absolute;
+    transform: translateY(20px);
+    /* opacity: 0;
+    transition-duration:0.4s; */
+}
 .menuItem.dropdown:hover .dropdown {
    transform: translateY(0px);
     opacity: 1;
