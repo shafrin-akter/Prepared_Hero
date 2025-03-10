@@ -12,7 +12,7 @@
           {% if menu.links != blank %}
             <li>
               <div class="menuItem dropdown poppins-regular">
-                <span class="poppins-regular">{{ menu.title }}></span>
+                <span class="poppins-regular">{{ menu.title }}>  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
                 <ul class="dropdown">
                   {% for child in menu.links %}
                     <li>
