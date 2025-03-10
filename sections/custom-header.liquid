@@ -92,6 +92,11 @@ nav .menuPart .menuItem.active{
     margin: 10px;
     position: absolute;
     transform: translateY(20px);
+    opacity: 0;
+    transition-duration:0.4s;
+}
+.menuItem.dropdown:hover .dropdown {
+   transform: translateY(0px);
     opacity: 1;
 }
 .menuItem.dropdown .childItem {
