@@ -16,7 +16,7 @@ nav{
 .logo{
       width: 30%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .logo img{
   width: 256px;
