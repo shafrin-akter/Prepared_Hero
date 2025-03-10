@@ -53,6 +53,7 @@ nav .menuPart .menuItem.active{
     gap: 50px;
     justify-content: center;
     padding: 35px 0;
+      margin: 19px 0;
 }
 .dropdownItem  {
     display: flex;
