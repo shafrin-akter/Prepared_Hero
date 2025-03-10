@@ -24,7 +24,9 @@ nav .menuPart .menuItem.active{
   
  
 }
-.shop{}
+.shop{
+  cursor: not-allowed;
+}
 .menuItem.dropdown{
   /* position: relative; */
 }
