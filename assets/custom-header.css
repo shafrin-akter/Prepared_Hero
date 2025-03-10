@@ -45,7 +45,8 @@ nav .menuPart .menuItem.active{
     transform: translateY(20px);
     opacity: 1;
     transition-duration:0.4s;
-    border: 1px solid red;
+    box-shadow: 0 4px 5px 1px #0000001a;
+    border-top: 1px solid #f1f1f1;
     left:0;
     background-color: #fff;
     display:flex;
