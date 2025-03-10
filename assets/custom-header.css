@@ -16,7 +16,6 @@ nav .menuPart .menuItem{
   display:block;
   padding:5px 10px;
   border-radius: 10px;
-  cursor: not-allowed;
 }
 nav .menuPart .menuItem.active{
   background-color:;
