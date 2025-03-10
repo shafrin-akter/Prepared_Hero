@@ -62,6 +62,9 @@ nav .menuPart .menuItem.active{
     display:flex;
     flex-wrap:wrap;
 }
+.megamenuItem{
+  flex-basis:33.33%;
+}
 .menuItem.dropdown:hover .dropdown {
    transform: translateY(0px);
     opacity: 1;
