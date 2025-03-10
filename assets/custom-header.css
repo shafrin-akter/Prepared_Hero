@@ -8,14 +8,18 @@
     align-items: center;
   }
 .logo{
-  width: 20%;
+      width: 25%;
+    display: flex;
+    justify-content: flex-start;
 }
 .logo img{
   width: 256px;
   display: block;
 }
 .cart{
-  
+   width: 25%;
+    display: flex;
+    justify-content: end;
 }
 .cart img {
   width: 25px;
