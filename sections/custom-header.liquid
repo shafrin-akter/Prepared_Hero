@@ -23,7 +23,7 @@
                 {% if menu.levels == 1 %} 
                      <ul class="dropdown">
   {% for child in menu.links %}
-    {% assign collection = collections[child.handle] %} <!-- Corrected from grandchild to child -->
+    {% assign collection = collections[child.handle] %}
     
     <li class="mega-menu-item">
       <a 
