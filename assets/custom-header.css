@@ -7,9 +7,12 @@
     justify-content: center;
     align-items: center;
   }
-.logo img, .cartm img{
+.logo img{
   width: 256px;
   display: block;
+}
+..cart img {
+  width: 25px;
 }
  nav .menuPart {
     display: flex;
