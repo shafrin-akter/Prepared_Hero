@@ -39,7 +39,7 @@ nav .menuPart .menuItem.active{
 }
 .menuItem.dropdown .dropdown {
     list-style: none;
-    min-width: 300px;
+    max-width: 300px;
     width: 100%;
     margin: 10px;
     position: absolute;
