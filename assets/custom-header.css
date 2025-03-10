@@ -57,6 +57,7 @@ nav .menuPart .menuItem.active{
 }
 .menuItem.dropdown .dropdownItem img {
   width:44px;
+  display: block;
    
 }
 .menuItem.dropdown .megamenu {
