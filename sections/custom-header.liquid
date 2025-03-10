@@ -52,13 +52,15 @@
                                    <img src="{{ product_check.featured_image | img_url:'small' }}" alt="{{ product_check.title  }}">
                                   {{ grandchild.title }}
                                 </a>
-                                 
-                               {% endif %}
-                                <a 
+
+                                 {% else %}
+                                 <a 
                                   class="childItem poppins-regular {% if grandchild.active %} active {% endif %} poppins-regular" 
                                   href="{{ grandchild.url }}">
                                   {{ grandchild.title }}
                                 </a>
+                               {% endif %}
+                                
                              {% endfor %}
                            </div>
                         </div>
