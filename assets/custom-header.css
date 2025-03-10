@@ -47,6 +47,7 @@ nav .menuPart .menuItem.active{
     opacity: 0;
     transition-duration:0.4s;
     border: 1px solid red;
+  left:0
 }
 .menuItem.dropdown .megamenu {
     list-style: none;
