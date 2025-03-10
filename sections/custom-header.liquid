@@ -33,7 +33,7 @@
         <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
       {% endif %}
       <a 
-        class="childItem poppins-regular {% if child.active %} active {% endif %}" 
+        class="childItem dropdowntext poppins-regular {% if child.active %} active {% endif %}" 
         href="{{ child.url }}">
         {{ child.title }}
       </a>
