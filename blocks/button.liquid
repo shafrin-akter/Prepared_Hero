@@ -13,14 +13,18 @@
   {% endif %}
   
  {% if bottomText != blank %}
-   <div>
+   <div class="bottomtext">
     <img src="{{ 'icon.png' | asset_url }}" width="15" height="15"  alt="Icon">
     <p>{{ bottomText }}</p>
   </div>
   {% endif %}
   
 </div>
-
+<style>
+  .bottomtext{
+    display:flex;
+  }
+</style>
 {% schema %}
   {
     "name": "Button",
