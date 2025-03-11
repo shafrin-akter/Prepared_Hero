@@ -27,12 +27,12 @@
     
             <li class="dropdownItem">
        
-          {% if collection.image %}
+          {% if collection.image != blank %}
           <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
           {% elsif collection.products.first.featured_image %}
             
               
-              <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
+           <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
 
            
       {% endif %}
