@@ -18,18 +18,18 @@
           {% if menu.links != blank %}
             <li>
               <div class="menuItem dropdown poppins-regular">
-                <span class="poppins-regular {% if menu.title == 'Shop' %} shop {% endif %}">{{ menu.title }}  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
+                <span class="poppins-regular {% if menu.levels > 0 %} shop {% endif %}">{{ menu.title }}  {{- 'icon-caret.svg' | inline_asset_content -}} </span>
 
                 {% if menu.levels == 1 %} 
                      <ul class="dropdown">
-  {% for child in menu.links %}
-    {% assign collection = collections[child.handle] %}
+            {% for child in menu.links %}
+            {% assign collection = collections[child.handle] %}
     
-    <li class="dropdownItem">
+            <li class="dropdownItem">
        
           {% if collection.image %}
-        <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
-      {% elsif collection.products.first.featured_image %}
+          <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
+          {% elsif collection.products.first.featured_image %}
             
               
               <img src="{{ collection.products.first.featured_image | img_url: 'medium' }}" alt="{{ collection.products.first.title }}">
