@@ -112,7 +112,12 @@
         },
         "button_Wd9eta": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "topText": "<ul><li>Bundle Discounts Now Available</li></ul>",
+            "bottomText": "Try It Risk-Free With Our 30-Day HERO Guarantee",
+            "buttonText": "",
+            "url": ""
+          }
         }
       },
       "block_order": [
