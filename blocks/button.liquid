@@ -9,7 +9,7 @@
    <p>{{ top }}</p>
   {% endif %}
   {% if bottomText != blank %}
-   <a href="{{ url}}">{{ buttonText }}</a>
+   <a class="btn " href="{{ url}}">{{ buttonText }}</a>
   {% endif %}
   
  {% if bottomText != blank %}
@@ -24,6 +24,9 @@
   .bottomtext{
     display:flex;
     align-items: center;
+  }
+  .btn{
+    text-decoration:none;
   }
 </style>
 {% schema %}
