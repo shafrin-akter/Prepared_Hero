@@ -56,6 +56,10 @@
 .product-advantages .advantages-content:last-of-type {
     border-right: none;
 }
+.btn_bundle_text{
+  font-size:12px;
+  
+}
 .btn_bundle_text:before {
     display: inline-block;
     vertical-align: middle;
