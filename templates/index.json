@@ -113,7 +113,7 @@
         "button_Wd9eta": {
           "type": "button",
           "settings": {
-            "topText": "<p>Bundle Discounts Now Available</p>",
+            "topText": "<p><strong>Bundle Discounts Now Available</strong></p>",
             "bottomText": "Try It Risk-Free With Our 30-Day HERO Guarantee",
             "buttonText": "Get Prepared Today!",
             "url": ""
