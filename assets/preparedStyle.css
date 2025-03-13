@@ -56,3 +56,14 @@
 .product-advantages .advantages-content:last-of-type {
     border-right: none;
 }
+.btn_bundle_text:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 7px 0 0;
+    width: 8px;
+    height: 8px;
+    background: #3bac24;
+    border-radius: 50%;
+    content: "";
+    animation: fade 1s ease-in-out infinite;
+}
