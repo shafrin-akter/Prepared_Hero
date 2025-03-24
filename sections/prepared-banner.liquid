@@ -2,7 +2,8 @@
  assign padding = section.settings.padding
  assign section_width = section.settings.section_width
 
-  
+  assign media = section.settings.media
+  assign badge = section.settings.badge
   assign rating = section.settings.rating
   assign ratingCount = section.settings.ratingCount
   assign textstyle = section.settings.textstyle
@@ -55,6 +56,18 @@
       }
     ],
     "settings": [
+      {
+        "type": "image_picker",
+        "id": "media",
+        "label": "Media"
+       
+      },
+      {
+        "type": "image_picker",
+        "id": "badge",
+        "label": "badge"
+       
+      },
        {
         "type": "text",
         "id": "padding",
@@ -100,18 +113,6 @@
         "id": "textstyle",
         "label": "Font Family",
         "default": "poppins_n4"
-      },
-      {
-        "type": "image_picker",
-        "id": "media",
-        "label": "Media"
-       
-      },
-      {
-        "type": "image_picker",
-        "id": "badge",
-        "label": "badge"
-       
       }
 
     ],
