@@ -70,12 +70,6 @@
             "descriptionWidth": 78
           }
         },
-        "product_advantages_hFMnbw": {
-          "type": "product-advantages",
-          "settings": {
-            "width": 100
-          }
-        },
         "product_advantages_JKYKV9": {
           "type": "product-advantages",
           "settings": {
@@ -123,7 +117,6 @@
       "block_order": [
         "title_Y9M998",
         "description_CUH3nq",
-        "product_advantages_hFMnbw",
         "product_advantages_JKYKV9",
         "button_Wd9eta"
       ],
