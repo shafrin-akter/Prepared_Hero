@@ -25,9 +25,9 @@
       {% content_for 'blocks' %}
   </div>
   <div class="banner_img">
-    <img src="{{ media | img_url:"1200x"}}">
+    <img src="{{ media | img_url: widht:540 , height: 680}}">
     {% if badge != blank %}
-      <img src="{{ badge | img_url: widht:540 , height: 680}}">
+      <img src="{{ badge | img_url}}">
     {% endif %}
   </div>
 </div>
