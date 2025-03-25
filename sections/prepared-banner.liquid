@@ -26,7 +26,9 @@
   </div>
   <div class="banner_img">
     <img src="{{ media | img_url}}">
-    <img src="{{ badge | img_url:"1200x"}}">
+    {% if badge != blank %}
+      <img src="{{ badge | img_url:"1200x"}}">
+    {% endif %}
   </div>
 </div>
 
