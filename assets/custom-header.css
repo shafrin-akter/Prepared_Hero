@@ -6,6 +6,7 @@
      display: flex;
     justify-content: center;
     align-items: center;
+   box-shadow: 0 4px 5px 1px #0000001a;
     
   }
 nav{
