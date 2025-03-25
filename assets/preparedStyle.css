@@ -33,6 +33,7 @@
   display:flex;
   align-items:center;
   gap:5px;
+  flex-basis:50%;
   color:black;
 }
 .rating_container img{
