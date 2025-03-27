@@ -73,6 +73,10 @@
     content: "";
     animation: fade 1s ease-in-out infinite;
 }
+.badge{
+  max-width:120px;
+  width:100%;
+}
 @keyframes fade {
     0% {
         opacity: 1;
