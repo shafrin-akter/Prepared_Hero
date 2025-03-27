@@ -122,6 +122,7 @@
       ],
       "settings": {
         "media": "shopify://shop_images/image_two.webp",
+        "badge": "shopify://shop_images/image_four.png",
         "padding": "10px 10px",
         "section_width": "1200px",
         "rating": "shopify://shop_images/star.webp",
