@@ -76,9 +76,11 @@
 .banner_img{
   position:relative;
 }
-.badge{
-  max-width:120px;
-  
+.badge {
+    max-width: 120px;
+    position: absolute;
+    right: 482px;
+    top: 344px;
 }
 @keyframes fade {
     0% {
