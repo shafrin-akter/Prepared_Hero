@@ -59,7 +59,8 @@
             "title": "Emergency Fire Blanket Stops Fire In Its Tracks",
             "textColor": "#d70000",
             "titleWidth": 100
-          }
+          },
+          "blocks": {}
         },
         "description_CUH3nq": {
           "type": "description",
@@ -68,7 +69,8 @@
             "fontSize": 17,
             "textColor": "#000000",
             "descriptionWidth": 78
-          }
+          },
+          "blocks": {}
         },
         "product_advantages_JKYKV9": {
           "type": "product-advantages",
@@ -81,21 +83,24 @@
               "settings": {
                 "icon": "shopify://shop_images/icon1.png",
                 "iconContent": "<strong>Compact and Easily Stored</strong>"
-              }
+              },
+              "blocks": {}
             },
             "advantages_item_AyCJcV": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon2.webp",
                 "iconContent": "<strong>No Messy Clean Up</strong>"
-              }
+              },
+              "blocks": {}
             },
             "advantages_item_6KrgDn": {
               "type": "advantages-item",
               "settings": {
                 "icon": "shopify://shop_images/icon3.png",
                 "iconContent": "<strong>Reusable No Expiry</strong>"
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -111,7 +116,8 @@
             "bottomText": "Try It Risk-Free With Our 30-Day HERO Guarantee",
             "buttonText": "Get Prepared Today!",
             "url": ""
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -127,7 +133,8 @@
         "section_width": "1200px",
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
-        "textstyle": "poppins_n4"
+        "textstyle": "poppins_n4",
+        "safetyImg": "shopify://shop_images/image_two.webp"
       }
     }
   },
