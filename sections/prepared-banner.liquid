@@ -8,6 +8,7 @@
   assign ratingCount = section.settings.ratingCount
   assign textstyle = section.settings.textstyle
   assign safetyImg = section.settings.safetyImg
+  assign safetyTextRed = section.settings.safetyTextRed
 
 %}
 
@@ -31,7 +32,7 @@
             
         </div>
         <div>
-          <h3></h3>
+          <h3><span>{{ safetyTextRed }}</span> <span></span></h3>
           
         </div>
       {% endif %}
@@ -145,6 +146,11 @@
         "type": "text",
         "id": "safetyTextRed",
         "label": "Safety Red Content"
+      },
+      {
+        "type": "text",
+        "id": "safetyTextBlack",
+        "label": "Safety Black Content"
       }
 
     ],
