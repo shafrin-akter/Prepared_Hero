@@ -84,7 +84,7 @@
 .safety_strip{
   border: 1px solid red;
 }
-@keyframes fade {
+@keyframes linear {
     0% {
         opacity: 1;
     }
