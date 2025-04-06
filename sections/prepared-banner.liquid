@@ -9,6 +9,7 @@
   assign textstyle = section.settings.textstyle
   assign safetyImg = section.settings.safetyImg
   assign safetyTextRed = section.settings.safetyTextRed
+  assign safetyTextBlack = section.settings.safetyTextBlack
 
 %}
 
@@ -32,7 +33,7 @@
             
         </div>
         <div>
-          <h3><span>{{ safetyTextRed }}</span> <span></span></h3>
+          <h3><span>{{ safetyTextRed }}</span> <span>{{ safetyTextBlack }}</span></h3>
           
         </div>
       {% endif %}
