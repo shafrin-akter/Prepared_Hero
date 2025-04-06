@@ -87,6 +87,7 @@
   padding: 8px 8px 8px 15px;
   border-radius: 15px;
   margin-top: 20px;
+  display:flex;
 }
 @keyframes fade {
     0% {
