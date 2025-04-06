@@ -24,14 +24,7 @@
       <h3 class="subtitle poppins-regular">{{ ratingCount }}</h3>
     </div>
       {% content_for 'blocks' %}
-  </div>
-  <div class="banner_img">
-    <img class="bn_img" src="{{ media | img_url:'540x680'}}">
-    {% if badge != blank %}
-      <img class="badge" src="{{ badge | img_url}}">
-    {% endif %}
-  </div>
-  <div class="safety_strip">
+    <div class="safety_strip">
    
       <div>
       <img src="{{ safetyImg | img_url : "116x116" }}"/>
@@ -43,6 +36,14 @@
     
   </div>
 </div>
+  </div>
+  <div class="banner_img">
+    <img class="bn_img" src="{{ media | img_url:'540x680'}}">
+    {% if badge != blank %}
+      <img class="badge" src="{{ badge | img_url}}">
+    {% endif %}
+  </div>
+  
 
 <style>
   .{{ section.id }}{
