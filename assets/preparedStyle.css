@@ -71,7 +71,8 @@
     background: #3bac24;
     border-radius: 50%;
     content: "";
-    animation: fade 1s ease-in-out infinite;
+    animation: 3s linear 1s infinite alternate slide-in;
+    /* animation: fade 1s ease-in-out infinite; */
 }
 
 .badge {
