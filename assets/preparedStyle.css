@@ -73,9 +73,7 @@
     content: "";
     animation: fade 1s ease-in-out infinite;
 }
-.banner_img{
-  position:relative;
-}
+
 .badge {
     max-width: 120px;
     position: absolute;
