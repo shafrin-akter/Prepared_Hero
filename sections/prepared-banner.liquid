@@ -34,7 +34,7 @@
             
         </div>
         <div>
-          <h3 class=".poppins-semibold"><span>{{ safetyTextRed }}</span> <span>{{ safetyTextBlack }}</span></h3>
+          <h3 class=".poppins-semibold"><span class="safetyRed">{{ safetyTextRed }}</span> <span class="safetyBlack">{{ safetyTextBlack }}</span></h3>
           {{ safetyText }}
         </div>
       {% endif %}
@@ -69,6 +69,8 @@
   .safety_strip img{
      border-radius: 8px;
   }
+  .safetyRed{}
+  .safetyBlack{}
 
 </style>
 
