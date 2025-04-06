@@ -25,16 +25,16 @@
     </div>
       {% content_for 'blocks' %}
       <div class="safety_strip">
+         {% if safetyImg != blank %}
          <div>
-            {% if safetyImg != blank %}
-              <img src="{{ safetyImg | img_url : "116x116" }}"/>
-           {% endif %}
+           <img src="{{ safetyImg | img_url : "116x116" }}"/>
+            
         </div>
         <div>
           <h3></h3>
           
         </div>
-    
+      {% endif %}
     </div>
   </div>
   <div class="banner_img">
