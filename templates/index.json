@@ -134,7 +134,10 @@
         "rating": "shopify://shop_images/star.webp",
         "ratingCount": "<p><strong>Trusted by 1,500,000+ American Families</strong></p>",
         "textstyle": "poppins_n4",
-        "safetyImg": "shopify://shop_images/image_two.webp"
+        "safetyImg": "shopify://shop_images/image_two.webp",
+        "safetyTextRed": "Active Fire Fighter Matt K.",
+        "safetyTextBlack": "\"Fire Elimination Made Easy\"",
+        "safetyText": "<p>Protect your home from fire accidents, giving your family peace of mind.</p>"
       }
     }
   },
