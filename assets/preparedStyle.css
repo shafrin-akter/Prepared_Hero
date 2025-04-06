@@ -83,7 +83,8 @@
 }
 .safety_strip{
   border: 1px solid red;
-  width: 88%
+  width: 88%;
+  padding: 8px 8px 8px 15px;
 }
 @keyframes fade {
     0% {
