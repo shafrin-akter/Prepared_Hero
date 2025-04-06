@@ -82,6 +82,9 @@
     right: 539px;
     top: 573px;
 }
+.safety_strip{
+  border: 1px solid red;
+}
 @keyframes fade {
     0% {
         opacity: 1;
