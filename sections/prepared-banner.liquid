@@ -30,6 +30,12 @@
       <img class="badge" src="{{ badge | img_url}}">
     {% endif %}
   </div>
+  <div class="safety_strip">
+    <div>
+      <img src="{{  }}">
+    </div>
+    <div></div>
+  </div>
 </div>
 
 <style>
@@ -119,6 +125,11 @@
         "id": "textstyle",
         "label": "Font Family",
         "default": "poppins_n4"
+      },
+      {
+        "type": "image_picker",
+        "id": "safetyImg",
+        "label": "Safety Strip Img"
       }
 
     ],
