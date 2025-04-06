@@ -7,6 +7,7 @@
   assign rating = section.settings.rating
   assign ratingCount = section.settings.ratingCount
   assign textstyle = section.settings.textstyle
+  assign safetyImg = section.settings.safetyImg
 
 %}
 
@@ -31,10 +32,14 @@
     {% endif %}
   </div>
   <div class="safety_strip">
-    <div>
-      <img src="{{  }}">
+    {% if safetyImg != blank %}
+      <div>
+      <img src="{{ safetyImg | img_url : "116x116" }}">
     </div>
-    <div></div>
+    <div>
+      
+    </div>
+    {% endif %}
   </div>
 </div>
 
