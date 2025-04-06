@@ -85,6 +85,7 @@
   border: 1px solid #e32d2d;
   width: 88%;
   padding: 8px 8px 8px 15px;
+  border-radius: 15px;
 }
 @keyframes fade {
     0% {
