@@ -25,7 +25,7 @@
       {% content_for 'blocks' %}
   </div>
   <div class="banner_img">
-    <img src="{{ media | img_url:'540x680'}}">
+    <img class="bn_img" src="{{ media | img_url:'540x680'}}">
     {% if badge != blank %}
       <img class="badge" src="{{ badge | img_url}}">
     {% endif %}
@@ -46,6 +46,9 @@
     font-family:{{textstyle}};
     margin:0;
     color:black;
+  }
+  .bn_img{
+    border-radious: 10px;
   }
 
 </style>
