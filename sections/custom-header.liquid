@@ -1,4 +1,4 @@
-{{ "custom-header.css" | asset_url | stylesheet_tag }}
+
 {% liquid
   assign menus = section.settings.menu.links
  
@@ -119,5 +119,137 @@
 {% endschema %}
 <style>
   
+.container{
+    max-width:1300px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   box-shadow: 0 4px 5px 1px #0000001a;
+    
+  }
+nav{
+  width:50%;
+  display: flex;
+  justify-content: center;
+}
+.logo{
+      width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+  width: 256px;
+  display: block;
+}
+.cart {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.cart img {
+  width: 25px;
+}
+ nav .menuPart {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+}
+nav .menuPart .menuItem{
+  text-decoration:none;
+  color:#000;
+  display:block;
+  padding:5px 10px;
+  border-radius: 10px;
+}
+nav .menuPart .menuItem.active{
+  background-color:;
+  color:#d70000;
+  
+ 
+}
+.shop{
+  cursor: not-allowed;
+}
+.menuItem.dropdown{
+  /* position: relative; */
+}
+.menuItem.dropdown .dropdown{
+  list-style:none;
+}
+.menuItem.dropdown svg{
+  width:14px;
+  transform: rotate(0deg);
+   transition-duration:0.4s;
+  
+}
+.menuItem.dropdown:hover svg{
+  transform: rotate(180deg);
+}
+.menuItem.dropdown .dropdown {
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-duration:0.4s;
+    box-shadow: 0 4px 5px 1px #0000001a;
+    border-top: 1px solid #f1f1f1;
+    left:0;
+    background-color: #fff;
+    display:flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 35px 0;
+      margin: 19px 0;
+}
+.dropdownItem  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem.dropdown .dropdownItem img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  border-radius: 10px;
+  
+   
+}
+.dropdowntext{
+  font-size:22px;
+  font-weight:500;
+}
+.menuItem.dropdown .megamenu {
+    list-style: none;
+    min-width: 300px;
+    width: 100%;
+    margin: 10px;
+    position: absolute;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-duration:0.4s;
+    left: 0;
+    display:flex;
+    flex-wrap:wrap;
+}
+.megamenuItem{
+  flex-basis:33.33%;
+}
+.menuItem.dropdown:hover .dropdown, .menuItem.dropdown:hover .megamenuItem {
+   transform: translateY(0px);
+    opacity: 1;
+}
+.menuItem.dropdown .childItem {
+    color: #000;
+    text-decoration: none;
+}
+.menuItem.dropdown:hover .dropdown .childItem:hover{}
 
 </style>
