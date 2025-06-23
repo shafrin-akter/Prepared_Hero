@@ -1,6 +1,182 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Product Info",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select Product"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_content",
+          "label": "Tab Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product Info",
+      "category": "Product"
+    }
+  ]
+}
 {% endschema %}
+
+{% assign product = all_products[section.settings.product] %}
+<div class="custom-product-info">
+  <!-- Image Gallery -->
+  <div class="product-gallery">
+    {% for image in product.images %}
+      <img src="{{ image | img_url: '400x' }}" alt="{{ product.title }}" class="product-thumb" />
+    {% endfor %}
+  </div>
+
+  <!-- Product Info -->
+  <div class="product-details">
+    <h2>{{ product.title }}</h2>
+    <p class="price">
+      {% if product.compare_at_price > product.price %}
+        <span class="sale-price">{{ product.price | money }}</span>
+        <span class="compare-price">{{ product.compare_at_price | money }}</span>
+      {% else %}
+        <span>{{ product.price | money }}</span>
+      {% endif %}
+    </p>
+
+    <p class="description">{{ product.description | strip_html | truncatewords: 30 }}</p>
+
+    <!-- Variant Options -->
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <label for="quantity">Quantity:</label>
+      <div class="quantity-control">
+        <button type="button" class="qty-btn minus">-</button>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" />
+        <button type="button" class="qty-btn plus">+</button>
+      </div>
+      <button type="submit" class="btn">Add to Cart</button>
+    </form>
+    
+    <!-- Tabbed Content -->
+    <div class="tab-wrapper">
+      <ul class="tab-nav">
+        {% for block in section.blocks %}
+          <li class="tab-link{% if forloop.first %} active{% endif %}" data-tab="tab-{{ forloop.index }}">{{ block.settings.tab_title }}</li>
+        {% endfor %}
+      </ul>
+      {% for block in section.blocks %}
+        <div class="tab-content{% if forloop.first %} active{% endif %}" id="tab-{{ forloop.index }}">
+          {{ block.settings.tab_content }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+.custom-product-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-gallery img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.product-details {
+  flex: 1;
+}
+.price .sale-price {
+  color: #e53935;
+  font-weight: bold;
+}
+.price .compare-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qty-btn {
+  background: #eee;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.tab-wrapper {
+  margin-top: 2rem;
+}
+.tab-nav {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+.tab-link {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+}
+.tab-link.active {
+  border-color: #000;
+  font-weight: bold;
+}
+.tab-content {
+  display: none;
+  margin-top: 1rem;
+}
+.tab-content.active {
+  display: block;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab-link");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+      tab.classList.add("active");
+      contents[index].classList.add("active");
+    });
+  });
+
+  // Quantity button
+  document.querySelectorAll(".qty-btn").forEach(btn => {
+    btn.addEventListener("click", function () {
+      const input = this.parentElement.querySelector("input");
+      let value = parseInt(input.value);
+      if (this.classList.contains("plus")) value++;
+      if (this.classList.contains("minus") && value > 1) value--;
+      input.value = value;
+    });
+  });
+});
+</script>
