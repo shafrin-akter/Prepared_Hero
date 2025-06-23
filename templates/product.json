@@ -18,10 +18,42 @@
             "tab_title": "jfjfjf",
             "tab_content": ""
           }
+        },
+        "tab_FgfXLB": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "rerer",
+            "tab_content": ""
+          }
+        },
+        "tab_7Vm3CT": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "",
+            "tab_content": ""
+          }
+        },
+        "tab_xFy3im": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "",
+            "tab_content": ""
+          }
+        },
+        "tab_BtJbTQ": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "",
+            "tab_content": ""
+          }
         }
       },
       "block_order": [
-        "tab_a8KcjJ"
+        "tab_a8KcjJ",
+        "tab_FgfXLB",
+        "tab_7Vm3CT",
+        "tab_xFy3im",
+        "tab_BtJbTQ"
       ],
       "settings": {
         "product": "emergency-fire-blanket"
