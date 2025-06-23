@@ -36,41 +36,55 @@
 {% endschema %}
 
 {% assign product = all_products[section.settings.product] %}
+{% if product %}
 <div class="custom-product-info">
-  <!-- Image Gallery -->
+  <!-- Gallery -->
   <div class="product-gallery">
     {% for image in product.images %}
-      <img src="{{ image | img_url: '400x' }}" alt="{{ product.title }}" class="product-thumb" />
+      <img src="{{ image | img_url: '400x' }}" alt="{{ product.title }}" />
     {% endfor %}
   </div>
 
-  <!-- Product Info -->
+  <!-- Product Details & Form -->
   <div class="product-details">
     <h2>{{ product.title }}</h2>
-    <p class="price">
-      {% if product.compare_at_price > product.price %}
+
+    <div class="price">
+      {% if product.compare_at_price_max > product.price %}
         <span class="sale-price">{{ product.price | money }}</span>
-        <span class="compare-price">{{ product.compare_at_price | money }}</span>
+        <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
       {% else %}
         <span>{{ product.price | money }}</span>
       {% endif %}
-    </p>
+    </div>
 
-    <p class="description">{{ product.description | strip_html | truncatewords: 30 }}</p>
+    <!-- Form -->
+    {% form 'product', product %}
+      {% unless product.has_only_default_variant %}
+        <label for="variant">Choose Variant:</label>
+        <select name="id" id="variant-select">
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}">
+              {{ variant.title }} {% if variant.available == false %}(Sold out){% endif %}
+            </option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      {% endunless %}
 
-    <!-- Variant Options -->
-    <form method="post" action="/cart/add">
-      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <!-- Quantity -->
       <label for="quantity">Quantity:</label>
       <div class="quantity-control">
         <button type="button" class="qty-btn minus">-</button>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" />
+        <input type="number" name="quantity" id="quantity" min="1" value="1" />
         <button type="button" class="qty-btn plus">+</button>
       </div>
+
       <button type="submit" class="btn">Add to Cart</button>
-    </form>
-    
-    <!-- Tabbed Content -->
+    {% endform %}
+
+    <!-- Tabs -->
     <div class="tab-wrapper">
       <ul class="tab-nav">
         {% for block in section.blocks %}
@@ -85,6 +99,9 @@
     </div>
   </div>
 </div>
+{% else %}
+<p>Please select a product from the section settings.</p>
+{% endif %}
 
 <style>
 .custom-product-info {
@@ -100,8 +117,8 @@
 }
 .product-gallery img {
   max-width: 100%;
-  border: 1px solid #ddd;
   border-radius: 8px;
+  border: 1px solid #ddd;
 }
 .product-details {
   flex: 1;
@@ -112,13 +129,14 @@
 }
 .price .compare-price {
   text-decoration: line-through;
-  color: #888;
   margin-left: 10px;
+  color: #888;
 }
 .quantity-control {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin: 1rem 0;
 }
 .qty-btn {
   background: #eee;
@@ -156,19 +174,17 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".tab-link");
-  const contents = document.querySelectorAll(".tab-content");
-
-  tabs.forEach((tab, index) => {
+  // Tab click handler
+  document.querySelectorAll(".tab-link").forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      contents.forEach(c => c.classList.remove("active"));
+      document.querySelectorAll(".tab-link").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
       tab.classList.add("active");
-      contents[index].classList.add("active");
+      document.querySelector("#tab-" + (index + 1)).classList.add("active");
     });
   });
 
-  // Quantity button
+  // Quantity button handler
   document.querySelectorAll(".qty-btn").forEach(btn => {
     btn.addEventListener("click", function () {
       const input = this.parentElement.querySelector("input");
